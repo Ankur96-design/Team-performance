@@ -1,0 +1,137 @@
+.options-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #1a237e;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0.9;
+  margin: 0;
+  text-align: center;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.option-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;
+  max-width: 500px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.option-card h2 {
+  color: #1a237e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.option-card p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.arrow {
+  color: #1a237e;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.back-button {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  backdrop-filter: blur(4px);
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%) translateX(-2px);
+}
+
+@media (max-width: 768px) {
+  .options-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .option-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .back-button {
+    top: 1rem;
+    left: 1rem;
+    transform: none;
+  }
+
+  .header {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+} 

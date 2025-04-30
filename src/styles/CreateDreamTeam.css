@@ -1,0 +1,207 @@
+.dream-team-creator {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #1a1a2e;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 3rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #4CAF50;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  margin-left: 2rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 2px solid #4CAF50;
+}
+
+.back-button:hover {
+  background: #34495e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.selection-container {
+  background: #2c3e50;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(76, 175, 80, 0.3);
+}
+
+.selection-container h2 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 1.2rem;
+  border: 2px solid rgba(76, 175, 80, 0.3);
+  border-radius: 8px;
+  background: #34495e;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+.select-wrapper select:hover {
+  background: #3d566e;
+  border-color: #4CAF50;
+}
+
+.select-wrapper::after {
+  content: '▼';
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4CAF50;
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.select-wrapper select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.select-wrapper select option {
+  background: #34495e;
+  color: #fff;
+  padding: 1rem;
+}
+
+.predict-button {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.predict-button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+.predict-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.4);
+}
+
+@media (max-width: 768px) {
+  .dream-team-creator {
+    padding: 1rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .selection-container {
+    padding: 1.5rem;
+  }
+
+  .selection-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .back-button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+
+  .form-group label {
+    font-size: 1.1rem;
+  }
+
+  .select-wrapper select {
+    padding: 1rem;
+  }
+
+  .predict-button {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+} 
